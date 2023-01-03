@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import {UsersPost} from '../models/users.js';
 
-export const users = app => {
+export const users = (app: { post: (arg0: string, arg1: { (req: any, res: any): Promise<void>; (req: any, res: any): Promise<void>; }) => void; }) => {
   app.post('/userAuth', async (req, res) => {
     let data;
     const {email, password} = req.body;

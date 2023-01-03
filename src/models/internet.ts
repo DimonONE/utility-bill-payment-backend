@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
+//@ts-ignore
 const ObjectId = Schema.ObjectId;
 
 const InternetSchema = new Schema({

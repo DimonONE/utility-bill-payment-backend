@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import {InternetPost} from '../models/internet.js';
 
-export const internet = app => {
+export const internet = (app: { get: (arg0: string, arg1: (req: any, res: any) => Promise<void>) => void; post: (arg0: string, arg1: (req: any, res: any) => Promise<void>) => void; }) => {
   app.get('/internet', async (req, res) => {
     let data;
     const {userId} = req.query;

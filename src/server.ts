@@ -1,8 +1,9 @@
+
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import {routes} from './routes/index.js';
-import {connectBd} from './config/db.js';
+import {connectBd} from '../config/db.js';
 
 const app = express();
 const port = 8000;
